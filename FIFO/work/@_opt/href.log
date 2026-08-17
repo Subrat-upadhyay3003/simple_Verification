@@ -1,0 +1,20 @@
+BEGIN 3:fifo_if:fast__1:work
+    rst :  1:FIFO_TB_sv_unit:fast:work
+    empty :  1:FIFO_TB_sv_unit:fast:work
+    clock :  1:FIFO_TB_sv_unit:fast:work
+    rd :  1:FIFO_TB_sv_unit:fast:work
+    data_out :  1:FIFO_TB_sv_unit:fast:work
+    wr :  1:FIFO_TB_sv_unit:fast:work
+    full :  1:FIFO_TB_sv_unit:fast:work
+    data_in :  1:FIFO_TB_sv_unit:fast:work
+END 
+BEGIN 3:fifo_if:fast__2:work
+    rst :  1:fifo_tb:fast:work
+    rd :  1:fifo_tb:fast:work
+    data_out :  1:fifo_tb:fast:work
+    full :  1:fifo_tb:fast:work
+    clock :  1:fifo_tb:fast:work
+    wr :  1:fifo_tb:fast:work
+    data_in :  1:fifo_tb:fast:work
+    empty :  1:fifo_tb:fast:work
+END 

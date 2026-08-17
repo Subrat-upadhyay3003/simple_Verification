@@ -1,0 +1,6 @@
+vlib work
+vlog fifo.sv +acc
+vlog FIFO_TB.sv +acc
+vsim work.fifo_tb
+add wave -r *
+run -all

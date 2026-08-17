@@ -1,0 +1,141 @@
+$date
+	Mon Aug 17 19:57:29 2026
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2024.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module Uart_tb $end
+$var event 1 ! drvnext $end
+$var event 1 " sconext $end
+$var event 1 # done $end
+
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 1 % we $end
+$var wire 1 & strb $end
+$var wire 1 ' rst $end
+$var wire 1 ( addr [7] $end
+$var wire 1 ) addr [6] $end
+$var wire 1 * addr [5] $end
+$var wire 1 + addr [4] $end
+$var wire 1 , addr [3] $end
+$var wire 1 - addr [2] $end
+$var wire 1 . addr [1] $end
+$var wire 1 / addr [0] $end
+$var wire 1 0 wdata [7] $end
+$var wire 1 1 wdata [6] $end
+$var wire 1 2 wdata [5] $end
+$var wire 1 3 wdata [4] $end
+$var wire 1 4 wdata [3] $end
+$var wire 1 5 wdata [2] $end
+$var wire 1 6 wdata [1] $end
+$var wire 1 7 wdata [0] $end
+$var reg 8 8 rdata [7:0] $end
+$var reg 1 9 ack $end
+$var reg 2 : state [1:0] $end
+$var reg 2 ; next_state [1:0] $end
+$upscope $end
+$upscope $end
+
+$scope begin Uart_tb_sv_unit $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 8
+09
+bx :
+b0 ;
+1!
+1"
+1#
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+1'
+0&
+0%
+0$
+$end
+#5000
+1$
+b0 :
+b1 ;
+#10000
+0$
+#15000
+1$
+#20000
+0$
+#25000
+1$
+#30000
+0$
+#35000
+1$
+#40000
+0$
+#45000
+1$
+#50000
+0$
+#55000
+1$
+#60000
+0$
+#65000
+1$
+#70000
+0$
+#75000
+1$
+#80000
+0$
+#85000
+1$
+#90000
+0$
+#95000
+1$
+0'
+#100000
+0$
+#105000
+1$
+b1 :
+#110000
+0$
+#115000
+1$
+#120000
+0$
+#125000
+1$
+#130000
+0$
+#135000
+1$
+#140000
+0$
+#145000
+1$

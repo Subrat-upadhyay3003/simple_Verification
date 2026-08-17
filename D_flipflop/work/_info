@@ -1,0 +1,132 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/death/altera/24.1std/questa_fse/bin/System_verilog_verification/D_flipflop
+T_opt
+!s11d d_flipflop_tb_sv_unit /home/death/altera/24.1std/questa_fse/bin/System_verilog_verification/D_flipflop/work 1 dff_if 1 /home/death/altera/24.1std/questa_fse/bin/System_verilog_verification/D_flipflop/work 
+Z2 !s110 1786797269
+VcEKi[C^`n<=VcFXmHO8293
+04 10 4 work d_flipflop fast 0
+=1-000ae431a4f1-6a805cd5-51cdd-7994
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U3 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vd_flipflop
+Z4 2d_flipflop_tb.sv
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+DXx4 work 21 d_flipflop_tb_sv_unit 0 22 AH29?og^BQZzT<;`MC;aR2
+R2
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 KH3SA]X2=UEc0VYC]@fX93
+IhC5Jha=4fh`aWmGRJSA:_2
+!s105 d_flipflop_tb_sv_unit
+S1
+R1
+Z7 w1786797266
+Z8 8d_flipflop_tb.sv
+Z9 Fd_flipflop_tb.sv
+!i122 3
+L0 177 24
+Z10 OL;L;2024.3;79
+31
+Z11 !s108 1786797269.000000
+Z12 !s107 d_flipflop_tb.sv|
+Z13 !s90 -reportprogress|300|d_flipflop_tb.sv|+acc|
+!i113 0
+Z14 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+Xd_flipflop_tb_sv_unit
+R4
+!s115 dff_if
+R5
+R2
+VAH29?og^BQZzT<;`MC;aR2
+r1
+!s85 0
+!i10b 1
+!s100 76LA^OPA7_n@:WO38K>Oo1
+IAH29?og^BQZzT<;`MC;aR2
+!i103 1
+S1
+R1
+R7
+R8
+R9
+!i122 3
+L0 1 0
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R3
+vdff
+Z15 2d_flipflop.sv
+R5
+R2
+!i10b 1
+!s100 27KNO?Rm:R9U[Y>[473VV3
+IE4lNz5LJOXnFjmeAb3XfP0
+S1
+R1
+Z16 w1786797156
+Z17 8d_flipflop.sv
+Z18 Fd_flipflop.sv
+!i122 2
+L0 1 11
+R6
+R10
+r1
+!s85 0
+31
+R11
+Z19 !s107 d_flipflop.sv|
+Z20 !s90 -reportprogress|300|d_flipflop.sv|+acc|
+!i113 0
+R14
+R3
+Ydff_if
+R15
+R5
+R2
+!i10b 1
+!s100 kfmk7PklPh=7PQSIdfY>P3
+I0d:YX:0E;A9D=_k<WKf[K2
+S1
+R1
+R16
+R17
+R18
+!i122 2
+L0 13 0
+R6
+R10
+r1
+!s85 0
+31
+R11
+R19
+R20
+!i113 0
+R14
+R3

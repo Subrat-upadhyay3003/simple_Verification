@@ -1,0 +1,6 @@
+vlib work
+vlog UART.sv +acc
+vlog Uart_tb.sv +acc
+vsim work.Uart_tb
+add wave -r *
+run -all

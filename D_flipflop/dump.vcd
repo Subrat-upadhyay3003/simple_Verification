@@ -1,0 +1,25 @@
+$date
+	Sat Aug 15 18:04:31 2026
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2024.3
+$end
+$timescale
+	1ns
+$end
+
+$scope module d_flipflop $end
+
+$scope module dut $end
+$upscope $end
+$upscope $end
+
+$scope begin d_flipflop_tb_sv_unit $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

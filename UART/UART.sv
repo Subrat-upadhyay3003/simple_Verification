@@ -1,0 +1,116 @@
+`timescale 1ns/1ps
+
+interface wb_if;
+    logic clk;
+    logic we;
+    logic strb;
+    logic rst;
+    logic [7:0] addr;
+    logic [7:0] wdata;
+    logic [7:0] rdata;
+    logic ack;
+endinterface
+
+
+module mem_wb(
+    input  logic       clk,
+    input  logic       we,
+    input  logic       strb,
+    input  logic       rst,
+    input  logic [7:0] addr,
+    input  logic [7:0] wdata,
+    output logic [7:0] rdata,
+    output logic       ack
+);
+
+    logic [7:0] mem [0:255];
+
+    typedef enum logic [1:0] {
+        IDLE       = 2'b00,
+        CHECK_MODE = 2'b01,
+        WRITE      = 2'b10,
+        READ       = 2'b11
+    } state_type;
+
+    state_type state, next_state;
+
+
+    // State register + memory write/reset
+    always_ff @(posedge clk) begin
+
+        if (rst) begin
+
+            state <= IDLE;
+
+            for (int i = 0; i < 256; i++) begin
+                mem[i] <= 8'h11;
+            end
+
+        end
+        else begin
+
+            state <= next_state;
+
+            if (state == WRITE) begin
+                mem[addr] <= wdata;
+            end
+
+        end
+
+    end
+
+
+    // Next-state and output logic
+    always_comb begin
+
+        // Defaults
+        next_state = state;
+        ack         = 1'b0;
+        rdata       = 8'h00;
+
+        case (state)
+
+            IDLE: begin
+                next_state = CHECK_MODE;
+            end
+
+
+            CHECK_MODE: begin
+
+                if (strb && we) begin
+                    next_state = WRITE;
+                end
+
+                else if (strb && !we) begin
+                    next_state = READ;
+                end
+
+                else begin
+                    next_state = CHECK_MODE;
+                end
+
+            end
+
+
+            WRITE: begin
+                ack = 1'b1;
+                next_state = IDLE;
+            end
+
+
+            READ: begin
+                rdata = mem[addr];
+                ack = 1'b1;
+                next_state = IDLE;
+            end
+
+
+            default: begin
+                next_state = IDLE;
+            end
+
+        endcase
+
+    end
+
+endmodule
